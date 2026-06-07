@@ -1,0 +1,7 @@
+# Ignore compiled binaries and temporary files
+*.exe
+*.out
+*.obj
+*.o
+*.log
+.vscode/*.tmp
