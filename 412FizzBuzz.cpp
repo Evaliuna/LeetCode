@@ -1,22 +1,25 @@
-#include <iostream>
-using namespace std;
+class Solution {
+public:
+    vector<string> fizzBuzz(int n) {
 
-int main(){
-    int n;
-    cin>>n;
-    string answer[n];
+    vector<string> answer;
     
-    if(n%3==0 && n%5==0){
-        cout<<"FizzBuzz";
+    for(int i = 0; i<n ;i++){
+    int num = i+1;
+    if(num%3==0 && num%5==0){
+        answer.push_back("FizzBuzz");//for vector here push_back
     }
-    else if(n%3==0){
-        cout<<"Fizz";
+    else if(num%3==0){
+        answer.push_back("Fizz");
     }
-    else if(n%5==0){
-        cout<<"Buzz";
+    else if(num%5==0){
+        answer.push_back("Buzz");
     }
     else{
-        cout<<"\""<<n<<"\"";
+       answer.push_back(to_string(num));
     }
-    return 0;
-}
+   
+    }
+    return answer;
+    }
+};
